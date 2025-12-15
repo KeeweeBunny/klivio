@@ -1,0 +1,105 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', system-ui, -apple-system, BlinkMacSystemFont;
+    text-decoration: none;
+    color: black;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    background-color: #152237;
+    height: 80px;
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.klivio-logo{
+    height: 31px;
+    width: 84px;
+}
+
+nav a{
+    font-size: 15px;
+}
+
+.button{
+    height: 40px;
+    width: 130px;
+}
+
+.hero{
+    display: flex;
+    flex-direction: column;
+    height: 450px;
+    max-width: 100%;
+    background-image: url(/klivio/image-bank/bg-header.png);
+    justify-content: center;
+    align-items: center;
+}
+
+.hero a {
+    border: solid black 1px;
+    border-radius: 5px;
+}
+
+.formation-section{
+    height: 632px;
+    max-width: 100%;
+}
+
+
+#section-formations-populaires{
+    background-color: #FFFF;
+}
+
+#section-formations-recentes{
+    background-color: #152237;
+}
+
+.section-review{
+    height: 597px;
+    max-width: 100%;
+}
+
+.avantage-container{
+    height:641px;
+    max-width: 100%;
+}
+
+.creation-container{
+    height: 641px;
+    max-width: 100%;
+}
+
+.propos-container{
+    height: 740px;
+    max-width: 100%;
+}
+
+.form{
+    height: 585px;
+    max-width: 100%;
+    background-color: white;
+}
+
+footer{
+    height: 489px;
+    max-width: 100%;
+    background-color: #152237;
+}

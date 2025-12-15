@@ -7,17 +7,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Klivio - Formations</title>
     <link rel="stylesheet" href="styles.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <header class="site-header">
-        <nav aria-label="Navigation principale">
+        <nav class="navbar" aria-label="Navigation principale">
             <a href="/klivio/index.html" aria-label="Klivio - Accueil">
-                <img src="/klivio/image-bank/logo.png" alt="logo Klivio">
+                <img class="klivio-logo" src="/klivio/image-bank/logo.png" alt="logo Klivio">
             </a>
             <a href="/">Les formations</a>
             <form role="search" aria-label="Rechercher sur le site">
-                <label for="search-input" class="hidden">Rechercher</label>
+                <label for="search-input" class="hidden"></label>
                 <input
                     type="search"
                     id="search-input"
@@ -26,13 +29,13 @@
                     >
                 <button type="submit" aria-label="Rechercher">//</button>
             </form>
-            <button class="connexion-button">Connexion</button>
-            <button class="inscription-button">Inscription</button>
+            <button class="button" class="connexion-button">Connexion</button>
+            <button class="button" class="inscription-button">Inscription</button>
         </nav>
     </header>   
 
     <main>
-        <section aria-label="Hero - title">
+        <section class="hero" aria-label="Hero - title">
             <h1>
                 Klivio, l'allié de votre progression
             </h1>
@@ -42,7 +45,7 @@
             <a href="">En savoir plus</a>
         </section>
         <content>
-            <section aria-label="Formations populaires">
+            <section id="section-formations-populaires" class="formation-section" aria-label="Formations populaires">
                 <h2>Les formations populaires</h2>
                 <div class="cards-container">
                     <article class="formation-card">
@@ -88,25 +91,53 @@
                 </div>
                 <a href="//">Voir plus de formations</a>
             </section>
-            <section aria-label="Formations récentes">
+            <section id="section-formations-recentes" class="formation-section" aria-label="Formations récentes">
                 <h2>Les formations récentes</h2>
                 <div class="cards-container">
                     <article class="formation-card">
-
+                         <div class="card-price">
+                            <p class="new price">//</p>
+                            <p class="old price">//</p>
+                        </div>
+                        <h3>Mieux communiquer</h3>
+                        <p>Julien Martel | Coach en comm.</p>
+                        <a>//</a>
+                        <p>Améliorez vos échanges et votre impact relationnel</p>
                     </article>
                     <article class="formation-card">
-                        
+                         <div class="card-price">
+                            <p class="new price">//</p>
+                            <p class="old price">//</p>
+                        </div>
+                        <h3>Maîtriser ses emotions</h3>
+                        <p>Amel Benali | Psy. du travail</p>
+                        <a>//</a>
+                        <p>Developper calme et intelligence émotionelle</p>
                     </article>
                     <article class="formation-card">
-                        
+                         <div class="card-price">
+                            <p class="new price">//</p>
+                            <p class="old price">//</p>
+                        </div>
+                        <h3>Résoudre les problèmes</h3>
+                        <p>Thomas Rivière | Expert</p>
+                        <a>//</a>
+                        <p>Analysez, décidez et trouvez des solutions durables</p>
                     </article>
                     <article class="formation-card">
-                        
+                         <div class="card-price">
+                            <p class="new price">//</p>
+                            <p class="old price">//</p>
+                        </div>
+                        <h3>Leadership positif</h3>
+                        <p>Marc Nguyen | Consultant</p>
+                        <a>//</a>
+                        <p>Inspirez, motiviez et fédérez votre équipe</p>
                     </article>
                 </div>
                 <a href="//">Voir plus de formations</a>
             </section>
-            <section>
+            <section class="section-review">
                 <h2 id="client-review">AVIS CLIENTS</h2>
                 <div class="review-container">
                     <article class="review">
@@ -187,14 +218,16 @@
                     <img src="//" alt="//"/>
                 </div>
             </section>
-            <form>
-                <h2>NOUS CONTACTER</h2>
-                <hr>
-                <input type="last-name">
-                <input type="email">
-                <input type="text">
-                <button type="submit">Envoyer</button>
-            </form>
+            <section class="form">
+                <form>
+                    <h2>NOUS CONTACTER</h2>
+                    <hr>
+                    <input type="last-name">
+                    <input type="email">
+                    <input type="text">
+                    <button type="submit">Envoyer</button>
+                </form>
+            </section>
         </content>
     </main>
 
