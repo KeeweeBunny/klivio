@@ -23,29 +23,66 @@ header{
     flex-direction: column;
     background-color: #152237;
     height: 80px;
+    justify-content: center;
 }
 
 nav{
     display: flex;
-    justify-content: space-around;
     align-items: center;
+    gap: 24px;
+    padding: 12px 32px;
+    background-color: #152237;
 }
 
 .klivio-logo{
     height: 31px;
     width: 84px;
+    margin-left: 98px;
 }
 
 nav a{
     font-size: 15px;
+    font-weight: 500;
     color: #FFFF;
+    margin-left: 168px;
+}
+
+nav form{
+    border: solid #152237 1px;
+    background-color: #152237;
+}
+
+.searchbar{
+    display: flex;
+    align-items: center;
+    width: 477px;
+    height: 40px;
+    background-color: #152237;
+    border-radius: 6px;
+    padding: 6px 10px;
+    margin-left: 143px;
+}
+
+#magnifying-searchbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 22px;
+    height: 24px;
+    border: none;
+    background: none;
+    cursor: pointer;
 }
 
 .button{
+    display: flex;
     height: 40px;
     width: 130px;
     border: solid #152237 1px;
     border-radius: 6px;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
 }
 
 .inscription-button{
@@ -76,24 +113,32 @@ nav a{
 }
 
 .hero h1{
-    font-weight: 800;
+    font-weight: 700;
     font-size: 48px;
     color: #152237;
+    margin-bottom: 2px;
 }
 
 .hero p {
+    font-weight: 500;
     font-size: 20px;
     color: black;
+    margin-top: 2px;
+    margin-bottom: 22px;
 }
 
 .hero a {
+    display: flex;
     width: 130px;
     height: 40px;
     background-color: #FFFF;
-    border: solid #152237 1px;
+    border: none;
     border-radius: 6px;
     font-size: 15px;
+    font-weight: 500;
     color: #152237;
+    justify-content: center;
+    align-items: center;
 }
 
 
@@ -113,16 +158,46 @@ nav a{
     font-size: 36px;
     color: #152237;
     font-weight: 800;
+    margin-top: 30px;
+    margin-bottom: 34px;
+    margin-left: 97px;
 }
 
 .cards-container{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    margin: 0 100px;
 }
 
 .formation-card{
     width: 307px;
     height: 362px;
+}
+
+.card-price-pop{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #152237;
+    width: 120px;
+    height: 31.58px;
+    border-radius: 93px;
+    position: relative;
+    bottom: 20px;
+    left: 174px;
+}
+
+.new-price-pop{
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    margin-right: 7px;
+}
+
+.old-price-pop{
+    font-size: 10px;
+    color: white;
+    text-decoration: line-through;
 }
 
 .h3-pop{
@@ -136,6 +211,7 @@ nav a{
 }
 
 #see-more-pop{
+    display: flex;
     width: 225px;
     height: 40px;
     background-color: #152237;
@@ -143,6 +219,11 @@ nav a{
     text-align: center;
     color: white;
     font-size: 15px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 43px;
+    margin-bottom: 51px;
+    margin: auto;
 }
 
 
@@ -153,8 +234,37 @@ nav a{
 
 #formations-recentes{
     font-size: 36px;
-    color: white;
+    color: #152237;
     font-weight: 800;
+    margin-top: 30px;
+    margin-bottom: 34px;
+    margin-left: 97px;
+}
+
+.card-price-recentes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    width: 120px;
+    height: 31.58px;
+    border-radius: 93px;
+    position: relative;
+    bottom: 20px;
+    left: 174px;
+}
+
+.new-price-recentes{
+    font-size: 20px;
+    font-weight: bold;
+    color: #152237;
+    margin-right: 7px;
+}
+
+.old-price-recentes{
+    font-size: 10px;
+    color: #152237;
+    text-decoration: line-through;
 }
 
 .h3-recent{
@@ -168,44 +278,241 @@ nav a{
 }
 
 #see-more-recent{
+    display: flex;
     width: 225px;
     height: 40px;
     background-color: white;
     border-radius: 6px;
-    text-align: center;
+    align-items: center;
+    justify-content: center;
     color: #152237;
     font-size: 15px;
+    margin-top: 43px;
+    margin: auto;
 }
 
 
 .section-review{
+    display: flex;
+    flex-direction: column;
     height: 597px;
     max-width: 100%;
 }
 
-.avantage-container{
+#client-review{
+    font-size: 40px;
+    color: #152237;
+    font-weight: 900;
+    margin: 58px auto 66px;
+}
+
+.review-container{
+   display: flex;
+   margin: 0 150px;
+}
+
+.round-picture{
+    border-radius: 50%;
+}
+
+.avantages-container{
+    display: flex;
     height:641px;
     max-width: 100%;
+    background-color: #F5F5F5;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 100px 0 100px;
+}
+
+.avantages-container-gauche h2,
+.creation-container-droite h2 {
+    font-size: 40px;
+    font-weight: 900;
+    margin-bottom: 43px;
+}
+
+.item{
+    display: flex;
+    padding: 1%;
+}
+
+.item img{
+    padding: 1%;
+}
+
+.item h3{
+    font-size: 24px;
+    font-weight: 400;
+    max-width: 616px;
 }
 
 .creation-container{
+    display: flex;
     height: 641px;
     max-width: 100%;
+    background-color: #44DD8A;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 100px 0 100px;
 }
 
 .propos-container{
+    display: flex;
     height: 740px;
     max-width: 100%;
 }
 
+.propos-container-gauche{
+    display: flex;
+    flex-direction: column;
+    background-color: #F5F5F5;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+}
+
+.propos-title{
+    font-size: 40px;
+    font-weight: 900;
+    margin-bottom: 40px;
+}
+
+.propos-paragraph{
+    font-size: 18px;
+    margin-left: 100px;
+    margin-right: 60px;
+}
+
+.propos-container-droite{
+    display: flex;
+    background-color: #152237;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+}
+
 .form{
+    display: flex;
+    flex-direction: column;
     height: 585px;
     max-width: 100%;
     background-color: white;
+    align-items: center;
+}
+
+.form h2{
+    font-size: 40px;
+    font-weight: 900;
+    margin-top: 60px;
+}
+
+.contact{
+    display: flex;
+    flex-direction: column;
+    margin: 0 172px;
+}
+
+.contact hr{
+    width: 350px;
+}
+
+.data{
+    display: flex;
+    justify-content: space-between;
 }
 
 footer{
     height: 489px;
     max-width: 100%;
     background-color: #152237;
+}
+
+.footer-upper{
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer-upper img{
+    width: 243px;
+    height: 87px;
+    margin-top: 109px;
+}
+
+.footer-upper-data{
+    display: flex;
+    flex-direction: column;
+    margin-top: 120px;
+}
+
+.footer-upper-data h2{
+    font-size: 15px;
+    font-weight: 700;
+    color: white;
+}
+
+.footer-upper-data h3{
+    font-size: 15px;
+    font-weight: 400;
+    color: white;
+}
+
+.flex-row img{
+    width: 24px;
+    height: 24px;
+}
+
+.flex-row{
+    display: flex;
+    flex-direction: row
+}
+
+.flex-row h3{
+    color: white;
+}
+
+.footer-buttons{
+    display: flex;
+    flex-direction: column;
+    margin-top: 120px;
+}
+
+.connexion-button-footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 130px;
+    height: 40px;
+    background-color: white;
+    border-radius: 6px;
+    margin-bottom: 12px;
+}
+
+.inscription-button-footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 130px;
+    height: 40px;
+    border-radius: 6px;
+    background-image: 
+        linear-gradient(
+            to right,
+            rgba(68, 221, 138, 1),
+            rgba(21, 183, 226, 1)
+        );
+}
+
+#hr-footer{
+    width: 1482px;
+    height: 2px;
+    background-color: #44DD8A;
+}
+
+.footer-lower{
+    justify-content: space-between;
+}
+
+.footer-lower h2{
+    color: white;
 }
