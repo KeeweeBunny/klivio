@@ -58,9 +58,10 @@ nav form{
     width: 477px;
     height: 40px;
     background-color: #152237;
+    border: solid white 1px;
     border-radius: 6px;
-    padding: 6px 10px;
     margin-left: 143px;
+    margin-right: 220px;
 }
 
 #magnifying-searchbar{
@@ -72,6 +73,26 @@ nav form{
     border: none;
     background: none;
     cursor: pointer;
+    padding: 11px;
+}
+
+.searchbar input[type="search"] {
+    flex: 1;
+    background: transparent;
+    border: none;
+    color: white;
+    font-size: 15px;
+    padding: 11px;
+}
+
+.searchbar button {
+    background: none;
+    border: none;
+    padding: 4px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .button{
@@ -202,12 +223,17 @@ nav form{
 
 .h3-pop{
     font-size: 24px;
+    font-weight: 700;
     color: #152237;
 }
 
 .paragraphe-pop{
     color: #152237;
     font-size: 16px;
+    font-weight: 400;
+    margin-top: 11px;
+    margin-bottom: 10.8px;
+    max-width: 306px;
 }
 
 #see-more-pop{
@@ -234,7 +260,7 @@ nav form{
 
 #formations-recentes{
     font-size: 36px;
-    color: #152237;
+    color: white;
     font-weight: 800;
     margin-top: 30px;
     margin-bottom: 34px;
@@ -269,12 +295,16 @@ nav form{
 
 .h3-recent{
     font-size: 24px;
+    font-weight: 700;
     color: white;
 }
 
 .paragraphe-recent{
     font-size: 16px;
     color: white;
+      margin-top: 11px;
+    margin-bottom: 10.8px;
+    max-width: 306px;
 }
 
 #see-more-recent{
@@ -309,6 +339,30 @@ nav form{
 .review-container{
    display: flex;
    margin: 0 150px;
+   justify-content: center;
+}
+
+.review-container p{
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: -1.5%;
+    line-height: 30px;
+}
+
+.review-container img{
+    margin: 13.8px 0 13.8px 0;
+}
+
+#review-juliette{
+    margin-right: 12px;
+    width: 689px;
+    height: 306px;
+}
+
+#review-camille{
+    margin-left: 12px;
+    width: 665px;
+    height: 306px;
 }
 
 .round-picture{
@@ -420,6 +474,17 @@ nav form{
 .data{
     display: flex;
     justify-content: space-between;
+}
+
+#gradient-section{
+    max-width:100%;
+    height: 18px;
+    background-image:
+    linear-gradient(
+            to right,
+            rgba(68, 221, 138, 1),
+            rgba(24, 160, 251, 1)
+        );
 }
 
 footer{
