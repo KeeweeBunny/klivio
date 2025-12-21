@@ -260,7 +260,7 @@
                             Favorisant l'autonomie d'apprentissage, notre plateforme offre la flexibilité  écessaire pour explorer divers sujets. La transparence est au cœur de notre démarche, garantissant une clarté totale sur les formations que les instructeurs proposent. Ensemble, ces valeurs forment le socle d'une  ducation enrichissante et équitable, guidant notre mission d'offrir des pportunités d'apprentissage de qualité
 
 
-                        </p>>
+                        </p>
                     </div>
                 </div>
                 <div class="propos-container-droite">
@@ -273,11 +273,11 @@
                 <form class="contact">
                     <hr>
                     <div class="data">
-                        <input type="last-name">
-                        <input type="email">
+                        <input type="last-name" placeholder="Nom">
+                        <input type="email" placeholder="email">
                     </div>
-                    <input type="text">
-                    <button class="button" type="submit">Envoyer</button>
+                    <textarea placeholder="Votre message"></textarea>
+                    <button id="button-contact" type="submit">Envoyer</button>
                 </form>
             </section>
         </content>
@@ -286,7 +286,7 @@
     </section>
     <footer>
         <div class="footer-upper" aria-label="Footer-1st-Part">
-            <img src="/klivio/image-bank/logo.png" alt="Logo Klivio">
+            <img id="logo-footer" src="/klivio/image-bank/logo.png" alt="Logo Klivio">
             <div class="footer-upper-data">
                 <h2>Mentions légales</h2>
                 <br>
@@ -316,12 +316,16 @@
                 <a class="inscription-button-footer">Inscription</a>
             </div>
         </div>
-        <hr id="hr-footer">
-        <div class="footer-lower flex-raw" aria-label="Footer-2nd-Part">
+
+        <div class="section-hr-footer">
+            <hr id="hr-footer">
+        </div>
+
+        <div class="footer-lower" aria-label="Footer-2nd-Part">
             <div>
-                <h2> © Klivio - 2025</h2>
+                <h2 id="klivio-copyright"> © Klivio - 2025</h2>
             </div>
-            <div>
+            <div id="social-network">
                 <h2>Suivez - nous</h2>
                 <img src="/klivio/image-bank/facebook-icon.svg" alt="Logo Facebook">
                 <img src="/klivio/image-bank/x-icon.svg" alt="Logo X">

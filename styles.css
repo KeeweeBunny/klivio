@@ -23,6 +23,7 @@ header{
     flex-direction: column;
     background-color: #152237;
     height: 80px;
+    max-width: 100%;
     justify-content: center;
 }
 
@@ -30,14 +31,12 @@ nav{
     display: flex;
     align-items: center;
     gap: 24px;
-    padding: 12px 32px;
     background-color: #152237;
 }
 
 .klivio-logo{
     height: 31px;
     width: 84px;
-    margin-left: 98px;
 }
 
 nav a{
@@ -64,6 +63,19 @@ nav form{
     margin-right: 220px;
 }
 
+.searchbar input[type="search"] {
+    flex: 1;
+    background: transparent;
+    border: none;
+    color: white;
+    font-size: 15px;
+    padding: 11px;
+}
+
+.searchbar input::placeholder {
+    color: white;
+}
+
 #magnifying-searchbar{
     display: flex;
     justify-content: center;
@@ -73,15 +85,6 @@ nav form{
     border: none;
     background: none;
     cursor: pointer;
-    padding: 11px;
-}
-
-.searchbar input[type="search"] {
-    flex: 1;
-    background: transparent;
-    border: none;
-    color: white;
-    font-size: 15px;
     padding: 11px;
 }
 
@@ -107,6 +110,7 @@ nav form{
 }
 
 .inscription-button{
+    margin-right: 101px;
     background-image: 
         linear-gradient(
             to right,
@@ -355,14 +359,24 @@ nav form{
 
 #review-juliette{
     margin-right: 12px;
-    width: 689px;
-    height: 306px;
+    max-width: 689px;
+    max-height: 306px;
+}
+
+#review-juliette p {
+    max-width: 686px;
+    max-height: 90px;
 }
 
 #review-camille{
     margin-left: 12px;
-    width: 665px;
-    height: 306px;
+    max-width: 665px;
+    max-height: 306px;
+}
+
+#review-camille p {
+    max-width: 656px;
+    max-height: 90px;
 }
 
 .round-picture{
@@ -384,6 +398,8 @@ nav form{
     font-size: 40px;
     font-weight: 900;
     margin-bottom: 43px;
+    line-height: 36px;
+    letter-spacing: -1.5%;
 }
 
 .item{
@@ -423,19 +439,26 @@ nav form{
     background-color: #F5F5F5;
     width: 50%;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
 }
 
 .propos-title{
     font-size: 40px;
     font-weight: 900;
+    line-height: 36px;
+    letter-spacing: -1.5%;
     margin-bottom: 40px;
+    margin-left: 103px;
 }
 
 .propos-paragraph{
+
     font-size: 18px;
-    margin-left: 100px;
-    margin-right: 60px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: -1.5%;
+    margin-left: 103px;
+    margin-right: 61px;
 }
 
 .propos-container-droite{
@@ -449,7 +472,7 @@ nav form{
 .form{
     display: flex;
     flex-direction: column;
-    height: 585px;
+    height: 663px;
     max-width: 100%;
     background-color: white;
     align-items: center;
@@ -464,16 +487,82 @@ nav form{
 .contact{
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     margin: 0 172px;
 }
 
 .contact hr{
     width: 350px;
+    margin-top: 39px;
+    background-color: #44DD8A;
 }
 
 .data{
     display: flex;
     justify-content: space-between;
+    margin-top: 55px;
+    margin-bottom: 55.75px;
+}
+
+.data input[type="last-name"] {
+    width: 599px;
+    height: 45.25px;
+    background-color: #152237;
+    margin-right: 115.94px;
+    padding-left: 18px;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: -1.5px;
+
+}
+
+.data input[type="email"]{
+    width: 598.75px;
+    height:45.3px;
+    background-color: #152237;
+    padding-left: 18px;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: -1.5px;
+}
+
+.data input::placeholder{
+    color: white;
+}
+
+.contact textarea{
+    width: 1335.92px;
+    height: 194.64px;
+    background-color: #152237;
+    margin-bottom: 54.64px;
+    padding-left: 18px;
+    padding-top: 15.44px;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: -1.5px;
+}
+
+.contact textarea::placeholder{
+    color: white;
+}
+
+#button-contact{
+    margin-bottom: 77.42px;
+    width: 351.56px;
+    height: 45.3px;
+    background-color: #44DD8A;
+    border: none;
+    border-radius: 6px;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 100%;
+    letter-spacing: -1.5%;
+    color: #152237;
+    cursor: pointer;
 }
 
 #gradient-section{
@@ -495,13 +584,14 @@ footer{
 
 .footer-upper{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
 }
 
-.footer-upper img{
+#logo-footer{
     width: 243px;
     height: 87px;
     margin-top: 109px;
+    margin-bottom: 96px;
 }
 
 .footer-upper-data{
@@ -522,14 +612,14 @@ footer{
     color: white;
 }
 
-.flex-row img{
-    width: 24px;
-    height: 24px;
-}
-
 .flex-row{
     display: flex;
     flex-direction: row
+}
+
+.flex-row img{
+    width: 24px;
+    height: 24px;
 }
 
 .flex-row h3{
@@ -551,6 +641,7 @@ footer{
     background-color: white;
     border-radius: 6px;
     margin-bottom: 12px;
+    cursor: pointer;
 }
 
 .inscription-button-footer{
@@ -566,18 +657,43 @@ footer{
             rgba(68, 221, 138, 1),
             rgba(21, 183, 226, 1)
         );
+        cursor: pointer;
+}
+
+.section-hr-footer{
+    display: flex;
+    justify-content: center;
 }
 
 #hr-footer{
     width: 1482px;
     height: 2px;
     background-color: #44DD8A;
+        margin-top: 28px;
+    margin-bottom: 25px;
 }
 
 .footer-lower{
+    display: flex;
     justify-content: space-between;
+}
+
+#klivio-copyright{
+    margin-left: 96px;
 }
 
 .footer-lower h2{
     color: white;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: -1.5%;
+}
+
+#social-network{
+    display: flex;
+    justify-content: space-evenly;
+    width: 297px;
+    height: 30px;
+    margin-right: 102px;
 }
